@@ -1,0 +1,604 @@
+@font-face {
+    font-family: "Open-Sans-r";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open-Sans-b";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+    font-style: bold;
+}
+
+body {
+    font-family: Open-sans-r, san-serif;
+    margin: 0;
+}
+
+.header-logo {
+    width: 180px;
+    height: 40px;
+    display: block;
+}
+
+.header {
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    margin: auto;
+    min-height: 450px;
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 0;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.header-top {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-list-item:nth-child(n + 2) {
+    margin-left: 35px;
+}
+
+.menu-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.menu-link:hover {
+    border-bottom: 1px solid;
+}
+
+.header-title {
+    color: white;
+    font-size: 45px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: open-sans-b, sans-serif;
+    padding-top: 120px;
+    padding-bottom: 146px;
+}
+
+.page-wrapper {
+    max-width: 1200px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-trends-wrapper {
+    width: 100%;
+    min-height: 379px;
+    min-width: 410px;
+}
+
+.main-trends-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.main-trend-title {
+    text-transform: uppercase;
+    font-family: open-sans-b;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 64px;
+    margin-bottom: 35px;
+    line-height: 1.2;
+}
+
+.main-trend-title::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 66px;
+    background-color: #e1d9bd;
+    margin: 12px auto 0;
+}
+
+.trends-posts-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 18px;
+}
+
+.trend-post {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 16px 18px;
+    min-height: 320px;
+}
+
+.trend-post::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.trend-post:nth-child(n + 2) {
+    margin-left: 1%;
+}
+
+.first-card {
+    background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend1.jpg?raw=true");
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    width: 24.825%;
+}
+
+.second-card {
+    background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend2.jpg?raw=true");
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    width: 24.825%;
+}
+
+.third-card {
+    background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend3.jpg?raw=true");
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    width: 24.825%;
+}
+
+.fourth-card {
+    background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend4.jpg?raw=true");
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    width: 24.825%;
+}
+
+.trends-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+
+.trends-tags {
+    display: inline;
+    list-style-type: none;
+    font-family: open-sans-b;
+    color: #b59f5b;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.trends-tags:nth-child(n + 2) {
+    margin-left: 20px;
+}
+
+.trends-tags-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.trends-tags-link:hover {
+    text-decoration: underline;
+}
+
+.trends-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+.trends-title:hover {
+    color: #b59f5b;
+}
+
+.trends-inner-wrapper {
+    width: 370px;
+    border: 3px solid #b59f5b;
+    padding: 18px;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.wrapper-container {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.post-container {
+    display: flex;
+    width: 778px;
+}
+
+.post-container:not(:first-child) {
+    margin-top: 60px;
+}
+
+.post-pic {
+    height: 293px;
+    width: 380px;
+    background-color: #eff6f1;
+}
+
+.card-discription {
+    margin-left: 30px;
+    width: 367px;
+}
+
+.card-top {
+    list-style-type: none;
+    font-family: open-sans-b;
+    color: #b59f5b;
+    text-transform: uppercase;
+    padding-left: 0;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.card-top-title {
+    display: inline;
+    margin-right: 20px;
+}
+
+.card-top-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-top-link:hover {
+    border-bottom: 1px solid #b59f5b;
+}
+
+.card-title {
+    line-height: 1.2;
+    font-family: open-sans-b;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.card-title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-title-link:hover {
+    color: #b59f5b;
+}
+
+.date-author {
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.date {
+    color: #888888;
+}
+
+.author {
+    font-family: open-sans-b;
+    margin-left: 12px;
+}
+
+.card-sample > p {
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 0;
+}
+
+.card-sample > p:not(:first-child) {
+    margin-top: 14px;
+}
+
+.aside {
+    width: 271px;
+    box-sizing: border-box;
+}
+
+.aside-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: open-sans-b;
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 0;
+}
+
+.aside-title::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 66px;
+    background-color: #e1d9bd;
+    margin: 12px auto 0;
+}
+
+.new-posts-card {
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.new-post-pic {
+    margin-top: 7px;
+    max-width: 70px;
+    height: 70px;
+    background-color: #eff6f1;
+}
+
+.new-post-discription {
+    margin-left: 20px;
+}
+
+.new-post-date {
+    font-size: 12px;
+    color: #888888;
+}
+
+.new-post-link {
+    text-decoration: none;
+    color: inherit;
+}
+.new-post-link:hover {
+    text-decoration: none;
+    color: #b59f5b;
+}
+
+.new-post-title {
+    font-family: open-sans-b;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.search {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.search-area {
+    display: flex;
+}
+
+.search-text {
+    box-sizing: border-box;
+    background-color: #f4f7f6;
+    padding: 0 20px;
+    height: 48px;
+    border-color: transparent;
+    outline: none;
+    width: 223px;
+}
+
+.search-text:focus {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #b59f5b;
+}
+
+.click-button {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #b59f5b;
+    background-size: 18px 18px;
+    border-color: transparent;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.click-button:hover {
+    background-color: black;
+}
+
+.visually__hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+
+.subscription-form {
+    margin-bottom: 60px;
+}
+
+.email {
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    background-color: #f4f7f6;
+    font-weight: normal;
+    font-size: 13px;
+    color: #a2a4a3;
+    padding: 0 15px;
+    border: 0;
+    margin-bottom: 16px;
+}
+
+.email:focus {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #b59f5b;
+}
+
+.subscription-button {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    font-family: open-sans-b;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    background-color: #b59f5b;
+    color: white;
+}
+
+.subscription-button:hover {
+    background-color: black;
+}
+
+.aside-tags {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    margin-bottom: 60px;
+    gap: 5px;
+    padding: 0;
+}
+
+.aside-item {
+    font-family: open-sans-b;
+    font-size: 12px;
+    border: 3px solid #ededed;
+    padding: 5px 14px;
+    text-transform: uppercase;
+}
+
+.aside-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.aside-item:hover {
+    border: 3px solid #b59f5b;
+}
+
+.aside-theme-list {
+    list-style-type: none;
+    padding: 0;
+    width: 271px;
+}
+
+.theme-link {
+    text-decoration: none;
+    color: inherit;
+    font-family: open-sans-b;
+    font-size: 12px;
+    line-height: 3.2;
+    padding-top: 10px;
+}
+
+.counter {
+    font-size: 10px;
+    font-family: open-sans-b;
+    color: #b59f5b;
+    vertical-align: super;
+}
+
+.counter:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 271px;
+    background-color: #eeeeee;
+}
+
+.footer {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.footer-address {
+    margin-bottom: 75px;
+    background-color: #f4f7f6;
+}
+
+.footer-list {
+    padding-left: 0px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.icon {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding: 30px 30px;
+}
+
+.social-network-dribble {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
+}
+
+.social-network-pinterest {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg);
+}
+
+.social-network-tumblr {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+}
+
+.copyright {
+    font-family: open-sans-b, sans-serif;
+    text-decoration: none;
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+}

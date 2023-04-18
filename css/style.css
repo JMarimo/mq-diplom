@@ -27,10 +27,7 @@
   }
 
   .popup-container {
-    display: flex;
-    flex-direction: column;
     max-width: 390px;
-    min-height: 590px;
     margin: 0 auto;
     position: relative;
     background-color: #ffffff;
@@ -105,6 +102,7 @@
   }
 
   .popup-field-opinion {
+    box-sizing: border-box;
     overflow: auto;
     resize: none;
     width: 100%;
@@ -241,20 +239,6 @@ body {
     margin: 12px auto 0;
   }
 
-.main-trends-wrapper {
-    width: 100%;
-    min-height: 379px;
-    min-width: 410px;
-}
-
-.main-trends-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
 .main-trend-title {
     text-transform: uppercase;
     font-family: open-sans-b;
@@ -279,6 +263,7 @@ body {
     justify-content: center;
     width: 100%;
     padding: 16px 18px;
+    gap: 1%;
 }
 
 .trend-post {
@@ -288,6 +273,7 @@ body {
     align-items: flex-end;
     padding: 16px 18px;
     min-height: 320px;
+    width: 25%;
 }
 
 .trend-post::before {
@@ -304,9 +290,6 @@ body {
     z-index: 1;
 }
 
-.trend-post:nth-child(n + 2) {
-    margin-left: 1%;
-}
 
 .first-card {
     background-image: url(../images/trend1.jpg);
@@ -315,8 +298,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
-    width: 24.825%;
-}
+   }
 
 .second-card {
     background-image: url(../images/trend2.jpg);
@@ -325,8 +307,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
-    width: 24.825%;
-}
+ }
 
 .third-card {
     background-image: url(../images//trend3.jpg);
@@ -335,8 +316,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
-    width: 24.825%;
-}
+  }
 
 .fourth-card {
     background-image: url(../images/trend4.jpg);
@@ -345,8 +325,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
-    width: 24.825%;
-}
+ }
 
 .trends-tags-list {
     display: flex;
@@ -363,10 +342,6 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
-}
-
-.trends-tags:nth-child(n + 2) {
-    margin-left: 20px;
 }
 
 .trends-tags-link {
@@ -390,7 +365,6 @@ body {
 }
 
 .trends-inner-wrapper {
-    width: 370px;
     border: 3px solid #b59f5b;
     padding: 18px;
     color: #ffffff;
@@ -752,7 +726,7 @@ body {
   }
   
   .product-button {
-    height: 48px;
+    height: 15px;
     padding: 15px 25px;
     border: none;
     background-color: #b59f5b;
@@ -760,6 +734,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     font-size: 13px;
+    text-decoration: none;
   }
   
   .product-button:hover {

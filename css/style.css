@@ -132,6 +132,17 @@
     background-repeat: no-repeat;
   }
 
+  .option-button {
+    width: 100%;
+    height: 48px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #b59f5b;
+    margin-top: 27px;
+  }
+  
 body {
     font-family: Open-sans-r, san-serif;
     margin: 0;
@@ -143,7 +154,8 @@ body {
   width: 30px;
   height: 20px;
 }
-.header-burger:before,
+
+.header-burger:before, 
 .header-burger:after {
   content: "";
   background-color: #ffffff;
@@ -152,11 +164,14 @@ body {
   height: 3px;
   left: 0;
 }
+
 .header-burger:before {
   top: 0;
-}
+  }
+
 .header-burger:after {
   bottom: 0;
+
 }
 .header-burger span {
   position: absolute;
@@ -165,6 +180,7 @@ body {
   background-color: #ffffff;
   width: 100%;
   height: 3px;
+
 }
 
 .header-logo {
@@ -831,3 +847,108 @@ body {
     text-align: center;
 }
 
+/* TABLET */
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  .header {
+    background-image: url("/images/banner-bg-tablet.jpg");
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+
+  .header-burger:before,
+  .header-burger:after {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+  }
+
+  .header-burger:before {
+    top: 0;
+  }
+
+  .header-burger:after {
+    bottom: 0;
+  }
+
+  .header-burger span {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 3px;
+  }
+
+  .trends-posts-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .trend-post {
+    width: calc((100% - 0.5%) / 2);
+  }
+  .first-card,
+  .second-card {
+    margin-bottom: 5px;
+  }
+
+  .page-wrapper {
+    padding: 0 40px;
+  }
+
+  .main-post-text {
+    margin-right: 40px;
+  }
+
+  .post-container {
+    flex-direction: column;
+    border-bottom: 2px solid rgb(215, 213, 213);
+  }
+
+  .post-pic {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .card-discription {
+    margin-left: 0;
+  }
+
+  .three-shop-cards {
+    flex-wrap: wrap;
+  }
+
+  .product-content {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+  }
+
+  .product-card-wrap img {
+    width: 100%;
+  }
+
+  .product-pic {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .product-info {
+    max-width: 100%;
+  }
+
+}
+.product-pic img {
+  width: 100%;
+}

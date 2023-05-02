@@ -962,15 +962,6 @@ body {
     width: 30px;
     height: 20px;
   }
-  .header-logo {
-    display: none;
-  }
-
-  .header-mobile-logo {
-    display: block;
-    max-width: 305px;
-    margin: 0 auto;
-  }
 
   .header-top {
     justify-content: flex-end;

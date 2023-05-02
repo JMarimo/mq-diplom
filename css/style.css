@@ -555,7 +555,7 @@ body {
 }
 
 .click-button {
-  background-image: url(../images/search.svg);
+  background-image: url(../svg/search.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #b59f5b;
